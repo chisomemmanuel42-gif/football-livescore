@@ -1,0 +1,1656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Football Pulse — Advanced Football Blog</title>
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Slab:wght@400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <!-- Simple Image Preloader -->
+<div id="preloader">
+  <img src="images/fp-logo.png" alt="Football Pulse Logo">
+</div>
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-gradient-brand fixed-top shadow-sm">
+        <div class="container-fluid">
+
+            <!-- Brand stays on far left -->
+            <a class="navbar-brand fw-bold d-flex align-items-center gap-2" href="#">
+                <i class="bi bi-shield-fill-check fs-4"></i>
+                Football Pulse
+            </a>
+
+            <!-- Mobile toggle button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+                aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Nav items pushed right -->
+            <div class="collapse navbar-collapse justify-content-lg-end" id="mainNav">
+                <ul class="navbar-nav align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="#latest-news">Latest</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#featured-analysis">Analysis</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#match-highlights">Highlights</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#live-scores">Live</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#fixtures">Fixtures</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#league-table">Table</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#players">Players</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#tactics-analytics">Tactics</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#podcasts">Podcasts</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#gallery">Gallery</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#newsletter">Newsletter</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about-contact">About & Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+
+    <!-- Global Search Bar -->
+    <section class="search-bar-section py-3 bg-gradient-soft shadow-sm">
+        <div class="container">
+            <form id="navSearchForm" class="position-relative d-flex justify-content-center" role="search"
+                autocomplete="off">
+                <div class="input-group search-group w-100" style="max-width:600px;">
+                    <span class="input-group-text bg-transparent border-0 text-white-50">
+                        <i class="bi bi-search"></i>
+                    </span>
+                    <input id="searchInput" class="form-control search-input" type="search"
+                        placeholder="Search articles, players, clubs..." aria-label="Search" />
+                    <button class="btn btn-cta" type="submit">Search</button>
+                </div>
+                <!-- Results dropdown -->
+                <div id="searchDropdown" class="dropdown-menu search-dropdown p-0 shadow-lg w-100 mt-2"></div>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Hero -->
+    <header class="hero d-flex align-items-center" id="home">
+        <div class="container py-5">
+            <div class="row align-items-center g-4">
+                <div class="col-lg-7">
+                    <h1 class="display-5 fw-bold text-white lh-tight mb-3">
+                        Your daily flow of football stories, tactics, and live action
+                    </h1>
+                    <p class="lead text-white-75 mb-4">
+                        Deep dives, instant updates, and smart analysis — crafted for fans who see the game between the
+                        lines.
+                    </p>
+                    <div class="d-flex gap-3">
+                        <a href="#latest-news" class="btn btn-cta btn-lg">
+                            Explore Latest
+                        </a>
+                        <a href="#tactics-analytics" class="btn btn-outline-light btn-lg">
+                            Read Analysis
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center">
+                    <div class="hero-card card border-0 shadow-lg">
+                        <div class="card-body p-4">
+                            <h5 class="card-title mb-3"><i class="bi bi-broadcast-pin me-2"></i>Live Match Center</h5>
+                            <ul class="list-unstyled small mb-0">
+                                <li class="d-flex justify-content-between py-2 border-bottom small">
+                                    <span>Rivers Utd vs Enyimba</span><span class="badge bg-success-soft">67' 1–0</span>
+                                </li>
+                                <li class="d-flex justify-content-between py-2 border-bottom small">
+                                    <span>Arsenal vs Chelsea</span><span class="badge bg-warning-soft">HT 2–1</span>
+                                </li>
+                                <li class="d-flex justify-content-between py-2">
+                                    <span>Barça vs Sevilla</span><span class="badge bg-danger-soft">28' 0–1</span>
+                                </li>
+                            </ul>
+                            <a href="#live-scores" class="btn btn-sm btn-cta mt-3 w-100">Open Live Scores</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- 1) Latest News -->
+        <section id="latest-news" class="section-pad bg-surface">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="title">Latest news</h2>
+                    <p class="subtitle">Fresh headlines across leagues and continents</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card h-100 hover-lift searchable"
+                            data-title="Nigerian wonderkid extends contract at top European club" data-category="News"
+                            data-tags="nigeria super eagles transfer youth europe" data-href="#latest-news">
+                            <img src="images/latest news1.webp" class="card-img-top" alt="Young footballer" />
+                            <div class="card-body">
+                                <h5 class="card-title">Nigerian wonderkid extends contract at top European club</h5>
+                                <p class="card-text small text-secondary">The 18-year-old forward commits long-term
+                                    after a breakout season...</p>
+                                     <a href="#latest-news" class="btn btn-primary btn-sm mt-2">Read More</a>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between small">
+                                <span><i class="bi bi-tag"></i> Transfers</span>
+                                <time>Aug 13</time>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card h-100 hover-lift searchable"
+                            data-title="Tactical tweak helps league leaders dominate midfield" data-category="News"
+                            data-tags="tactics pressing 4-3-3 coaching midfield" data-href="#featured-analysis">
+                            <img src="images/latest news 2.webp" class="card-img-top" alt="Tactics board" />
+                            <div class="card-body">
+                                <h5 class="card-title">Tactical tweak helps league leaders dominate midfield</h5>
+                                <p class="card-text small text-secondary">How inverted full-backs unlocked overloads and
+                                    passing lanes...</p>
+                                     <a href="#latest-news" class="btn btn-primary btn-sm mt-2">Read More</a>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between small">
+                                <span><i class="bi bi-lightbulb"></i> Tactics</span>
+                                <time>Aug 12</time>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card h-100 hover-lift searchable"
+                            data-title="CAF confirms expanded continental format" data-category="News"
+                            data-tags="caf africa competition format expansion" data-href="#latest-news">
+                            <img src="images/latest news3.jpeg" class="card-img-top" alt="Stadium crowd" />
+                            <div class="card-body">
+                                <h5 class="card-title">CAF confirms expanded continental format</h5>
+                                <p class="card-text small text-secondary">More teams, more drama — what it means for
+                                    clubs across Africa...</p>
+                                     <a href="#latest-news" class="btn btn-primary btn-sm mt-2">Read More</a>
+                            </div>
+                            <div class="card-footer d-flex justify-content-between small">
+                                <span><i class="bi bi-activity"></i> Governance</span>
+                                <time>Aug 11</time>
+                            </div>
+                        </article>
+                    </div>
+                   
+<div class="col-md-6 col-lg-4">
+    <article class="card h-60 hover-lift searchable"
+        data-title="Tactical tweak helps league leaders dominate midfield" data-category="News"
+        data-tags="tactics strategy midfield dominance" data-href="#latest-news">
+        <img src="images/latest-news4.jpeg" class="card-img-top" alt="Midfield battle" />
+        <div class="card-body">
+            <h5 class="card-title">Tactical tweak helps league leaders dominate midfield</h5>
+            <p class="card-text small text-secondary">Inverted full-backs and quick rotations are changing the game...</p>
+            <a href="#latest-news" class="btn btn-primary btn-sm mt-2">Read More</a>
+        </div>
+        <div class="card-footer d-flex justify-content-between small">
+            <span><i class="bi bi-lightning-charge"></i> Tactics</span>
+            <time>Aug 12</time>
+        </div>
+    </article>
+</div>
+
+
+<div class="col-md-6 col-lg-4">
+    <article class="card h-60 hover-lift searchable"
+        data-title="Pressing triggers explained: How to win the ball in 5 seconds" data-category="News"
+        data-tags="pressing tactics high-intensity play" data-href="#latest-news">
+        <img src="images/latest-news5.jpeg" class="card-img-top" alt="Team pressing" />
+        <div class="card-body">
+            <h5 class="card-title">Pressing triggers explained: How to win the ball in 5 seconds</h5>
+            <p class="card-text small text-secondary">Breaking down the cues and shapes that turn chaos into chances...</p>
+            <a href="#latest-news" class="btn btn-primary btn-sm mt-2">Read More</a>
+        </div>
+        <div class="card-footer d-flex justify-content-between small">
+            <span><i class="bi bi-bullseye"></i> Analysis</span>
+            <time>Aug 10</time>
+        </div>
+    </article>
+</div>
+
+
+<div class="col-md-6 col-lg-4">
+    <article class="card h-60 hover-lift searchable"
+        data-title="Build-up patterns: 3-2 vs 2-3 — when and why" data-category="News"
+        data-tags="build-up tactics formation analysis" data-href="#latest-news">
+        <img src="images/latest-news6.jpeg" class="card-img-top" alt="Formation board" />
+        <div class="card-body">
+            <h5 class="card-title">Build-up patterns: 3-2 vs 2-3 — when and why</h5>
+            <p class="card-text small text-secondary">Choosing stability or width in first phase can dictate everything...</p>
+            <a href="#latest-news" class="btn btn-primary btn-sm mt-2">Read More</a>
+        </div>
+        <div class="card-footer d-flex justify-content-between small">
+            <span><i class="bi bi-diagram-3"></i> Tactics</span>
+            <time>Aug 09</time>
+        </div>
+    </article>
+</div>
+
+<div class="col-md-6 col-lg-4">
+    <article class="card h-60 hover-lift searchable"
+        data-title="Rising star nets debut goal in continental showdown" data-category="News"
+        data-tags="africa champions league debut goal" data-href="#latest-news">
+        <img src="images/latest-news7.jpeg" class="card-img-top" alt="Player celebrating goal" />
+        <div class="card-body">
+            <h5 class="card-title">Rising star nets debut goal in continental showdown</h5>
+            <p class="card-text small text-secondary">The 19-year-old striker lights up the CAF Champions League stage...</p>
+            <a href="#latest-news" class="btn btn-primary btn-sm mt-2">Read More</a>
+        </div>
+        <div class="card-footer d-flex justify-content-between small">
+            <span><i class="bi bi-star-fill"></i> Spotlight</span>
+            <time>Aug 14</time>
+        </div>
+    </article>
+</div>
+
+<div class="col-md-6 col-lg-4">
+    <article class="card h-60 hover-lift searchable"
+        data-title="Underdogs stun giants in last-minute thriller" data-category="News"
+        data-tags="upset match report africa football" data-href="#latest-news">
+        <img src="images/latest-news8.jpeg" class="card-img-top" alt="Fans celebrating upset victory" />
+        <div class="card-body">
+            <h5 class="card-title">Underdogs stun giants in last-minute thriller</h5>
+            <p class="card-text small text-secondary">A stoppage-time strike sends shockwaves across the league table...</p>
+            <a href="#latest-news" class="btn btn-primary btn-sm mt-2">Read More</a>
+        </div>
+        <div class="card-footer d-flex justify-content-between small">
+            <span><i class="bi bi-exclamation-triangle"></i> Match Report</span>
+            <time>Aug 13</time>
+        </div>
+    </article>
+</div>
+
+
+<div class="col-md-6 col-lg-4">
+    <article class="card h-60 hover-lift searchable"
+        data-title="Analytics corner: Why pressing high is back in fashion" data-category="News"
+        data-tags="tactics analytics pressing" data-href="#latest-news">
+        <img src="images/latest-news9.jpeg" class="card-img-top" alt="Coach giving tactical instructions" />
+        <div class="card-body">
+            <h5 class="card-title">Analytics corner: Why pressing high is back in fashion</h5>
+            <p class="card-text small text-secondary">Data reveals a resurgence in high-intensity pressing among top clubs...</p>
+            <a href="#latest-news" class="btn btn-primary btn-sm mt-2">Read More</a>
+        </div>
+        <div class="card-footer d-flex justify-content-between small">
+            <span><i class="bi bi-graph-up"></i> Analysis</span>
+            <time>Aug 12</time>
+        </div>
+    </article>
+</div>
+
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 2) Featured Analysis -->
+        <section id="featured-analysis" class="section-pad bg-gradient-soft">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="title">Featured analysis</h2>
+                    <p class="subtitle">Deep dives that read the game beyond the scoreline</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <article class="card h-100 hover-lift searchable"
+                            data-title="Pressing triggers explained: How to win the ball in 5 seconds"
+                            data-category="Analysis" data-tags="pressing tactics counterpress gegenpress coaching"
+                            data-href="#featured-analysis">
+                            <div class="card-body">
+                                <h3 class="h5 mb-2">Pressing triggers explained: How to win the ball in 5 seconds</h3>
+                                <p class="text-secondary">We break down cues, body shape, and angles that turn chaotic
+                                    moments into high-value chances.</p>
+                                <a class="btn btn-cta btn-sm" href="#tactics-analytics">Read more</a>
+                            </div>
+                        </article>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <article class="card h-100 hover-lift searchable"
+                            data-title="Build-up patterns: 3-2 vs 2-3 — when and why" data-category="Analysis"
+                            data-tags="build-up patterns 3-2 2-3 structure positional play"
+                            data-href="#tactics-analytics">
+                            <div class="card-body">
+                                <h3 class="h5 mb-2">Build-up patterns: 3-2 vs 2-3 — when and why</h3>
+                                <p class="text-secondary">Choosing stability or width in first phase dictates everything
+                                    downstream. Here's how top sides decide.</p>
+                                <a class="btn btn-outline-cta btn-sm" href="#tactics-analytics">Open analysis</a>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 3) Match Highlights -->
+        <section id="match-highlights" class="section-pad bg-surface">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="title">Match highlights</h2>
+                    <p class="subtitle">Quick cuts, big moments</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4 searchable" data-title="Derby drama: 3 late goals in 10 minutes"
+                        data-category="Highlights" data-tags="derby highlights goals comeback"
+                        data-href="#match-highlights">
+                        <div class="ratio ratio-16x9 hover-lift">
+                            <iframe src="https://www.youtube.com/embed" title="Derby highlights"
+                                allowfullscreen></iframe>
+                        </div>
+                        <h6 class="mt-2">Derby drama: 3 late goals in 10 minutes</h6>
+                    </div>
+                    <div class="col-md-6 col-lg-4 searchable"
+                        data-title="Keeper masterclass: 10 saves to keep a clean sheet" data-category="Highlights"
+                        data-tags="goalkeeper saves clean sheet" data-href="#match-highlights">
+                        <div class="ratio ratio-16x9 hover-lift">
+                            <iframe src="https://www.youtube.com/embed" title="GK highlights" allowfullscreen></iframe>
+                        </div>
+                        <h6 class="mt-2">Keeper masterclass: 10 saves to keep a clean sheet</h6>
+                    </div>
+                    <div class="col-md-6 col-lg-4 searchable" data-title="Tiki-taka to tap-in: 25-pass team goal"
+                        data-category="Highlights" data-tags="tiki-taka team goal build up"
+                        data-href="#match-highlights">
+                        <div class="ratio ratio-16x9 hover-lift">
+                            <iframe src="https://www.youtube.com/embed" title="Team goal" allowfullscreen></iframe>
+                        </div>
+                        <h6 class="mt-2">Tiki-taka to tap-in: 25-pass team goal</h6>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4) Live Scores -->
+        <section id="live-scores" class="section-pad bg-gradient-soft">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="title">Live scores</h2>
+                    <p class="subtitle">Updated in real time</p>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle mb-0">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>Match</th>
+                                <th>Status</th>
+                                <th>Score</th>
+                                <th>Competition</th>
+                            </tr>
+                        </thead>
+                        <tbody id="liveScoresTable">
+                            <tr class="searchable" data-title="Rivers United vs Enyimba" data-category="Live"
+                                data-tags="nigeria npfl live" data-href="#live-scores">
+                                <td>Rivers United vs Enyimba</td>
+                                <td><span class="badge bg-success-soft">67'</span></td>
+                                <td>1–0</td>
+                                <td>NPFL</td>
+                            </tr>
+                            <tr class="searchable" data-title="Arsenal vs Chelsea" data-category="Live"
+                                data-tags="premier league england live" data-href="#live-scores">
+                                <td>Arsenal vs Chelsea</td>
+                                <td><span class="badge bg-warning-soft">HT</span></td>
+                                <td>2–1</td>
+                                <td>Premier League</td>
+                            </tr>
+                            <tr class="searchable" data-title="Barcelona vs Sevilla" data-category="Live"
+                                data-tags="la liga spain live" data-href="#live-scores">
+                                <td>Barcelona vs Sevilla</td>
+                                <td><span class="badge bg-danger-soft">28'</span></td>
+                                <td>0–1</td>
+                                <td>La Liga</td>
+                            </tr>
+                             <tr class="searchable" data-title="Barcelona vs Sevilla" data-category="Live"
+                                data-tags="la liga spain live" data-href="#live-scores">
+                                <td>Real Madird vs Griona</td>
+                                <td><span class="badge bg-danger-soft">75'</span></td>
+                                <td>4–1</td>
+                                <td>La Liga</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 5) Fixtures -->
+        <section id="fixtures" class="section-pad bg-surface">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="title">Fixtures</h2>
+                    <p class="subtitle">What’s coming up this week</p>
+                </div>
+
+                <div class="row g-3">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card hover-lift searchable" data-title="Man City vs Liverpool — Saturday 17:30"
+                            data-category="Fixture" data-tags="premier league england" data-href="#fixtures">
+                            <div class="card-body">
+                                <h6 class="mb-1">Man City vs Liverpool</h6>
+                                <p class="small text-secondary mb-0">Etihad Stadium — Sat 17:30</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card hover-lift searchable" data-title="Rangers vs Celtic — Sunday 14:00"
+                            data-category="Fixture" data-tags="scottish premiership" data-href="#fixtures">
+                            <div class="card-body">
+                                <h6 class="mb-1">Rangers vs Celtic</h6>
+                                <p class="small text-secondary mb-0">Ibrox — Sun 14:00</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card hover-lift searchable" data-title="MFM vs Kano Pillars — Sunday 16:00"
+                            data-category="Fixture" data-tags="npfl nigeria" data-href="#fixtures">
+                            <div class="card-body">
+                                <h6 class="mb-1">MFM vs Kano Pillars</h6>
+                                <p class="small text-secondary mb-0">Agege Stadium — Sun 16:00</p>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="col-md-6 col-lg-4">
+                        <div class="card hover-lift searchable" data-title="PSG vs Tottenham Hotspur — Tues 20:00"
+                            data-category="Fixture" data-tags="npfl nigeria" data-href="#fixtures">
+                            <div class="card-body">
+                                <h6 class="mb-1">PSG vs Tottenham Hotspur</h6>
+                                <p class="small text-secondary mb-0">Agege Stadium — Tues 20:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 6) League Table -->
+        <section id="league-table" class="section-pad bg-gradient-soft">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="title">English League table</h2>
+                    <p class="subtitle">Top four race heats up</p>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table table-striped align-middle mb-0">
+                        <thead class="table-dark">
+                            <tr>
+                                <th>#</th>
+                                <th>Club</th>
+                                <th>MP</th>
+                                <th>GD</th>
+                                <th>Pts</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="searchable" data-title="1. Arsenal 27 45 63" data-category="Table"
+                                data-tags="premier league table arsenal" data-href="#league-table">
+                                <td>1</td>
+                                <td>Arsenal</td>
+                                <td>27</td>
+                                <td>+45</td>
+                                <td>63</td>
+                            </tr>
+                            <tr class="searchable" data-title="2. Man City 27 41 61" data-category="Table"
+                                data-tags="premier league table man city" data-href="#league-table">
+                                <td>2</td>
+                                <td>Man City</td>
+                                <td>27</td>
+                                <td>+41</td>
+                                <td>61</td>
+                            </tr>
+                            <tr class="searchable" data-title="3. Liverpool 27 36 60" data-category="Table"
+                                data-tags="premier league table liverpool" data-href="#league-table">
+                                <td>3</td>
+                                <td>Liverpool</td>
+                                <td>27</td>
+                                <td>+36</td>
+                                <td>60</td>
+                            </tr>
+                            <tr class="searchable" data-title="4. Aston Villa 27 18 55" data-category="Table"
+                                data-tags="premier league table villa" data-href="#league-table">
+                                <td>4</td>
+                                <td>Aston Villa</td>
+                                <td>27</td>
+                                <td>+18</td>
+                                <td>55</td>
+                            </tr>
+                            <tr class="searchable" data-title="5. Tottenham 27 20 53" data-category="Table"
+                                data-tags="premier league table tottenham" data-href="#league-table">
+                                <td>5</td>
+                                <td>Tottenham</td>
+                                <td>27</td>
+                                <td>+20</td>
+                                <td>53</td>
+                            </tr>
+                            <tr class="searchable" data-title="6. Man Utd 27 12 50" data-category="Table"
+                                data-tags="premier league table man utd" data-href="#league-table">
+                                <td>6</td>
+                                <td>Man Utd</td>
+                                <td>27</td>
+                                <td>+12</td>
+                                <td>50</td>
+                            </tr>
+                            <tr class="searchable" data-title="7. Newcastle 27 10 44" data-category="Table"
+                                data-tags="premier league table newcastle" data-href="#league-table">
+                                <td>7</td>
+                                <td>Newcastle</td>
+                                <td>27</td>
+                                <td>+10</td>
+                                <td>44</td>
+                            </tr>
+                            <tr class="searchable" data-title="8. West Ham 27 5 42" data-category="Table"
+                                data-tags="premier league table west ham" data-href="#league-table">
+                                <td>8</td>
+                                <td>West Ham</td>
+                                <td>27</td>
+                                <td>+5</td>
+                                <td>42</td>
+                            </tr>
+                            <tr class="searchable" data-title="9. Brighton 27 3 40" data-category="Table"
+                                data-tags="premier league table brighton" data-href="#league-table">
+                                <td>9</td>
+                                <td>Brighton</td>
+                                <td>27</td>
+                                <td>+3</td>
+                                <td>40</td>
+                            </tr>
+                            <tr class="searchable" data-title="10. Wolves 27 0 38" data-category="Table"
+                                data-tags="premier league table wolves" data-href="#league-table">
+                                <td>10</td>
+                                <td>Wolves</td>
+                                <td>27</td>
+                                <td>0</td>
+                                <td>38</td>
+                            </tr>
+                            <tr class="searchable" data-title="11. Chelsea 27 -1 37" data-category="Table"
+                                data-tags="premier league table chelsea" data-href="#league-table">
+                                <td>11</td>
+                                <td>Chelsea</td>
+                                <td>27</td>
+                                <td>-1</td>
+                                <td>37</td>
+                            </tr>
+                            <tr class="searchable" data-title="12. Fulham 27 -5 35" data-category="Table"
+                                data-tags="premier league table fulham" data-href="#league-table">
+                                <td>12</td>
+                                <td>Fulham</td>
+                                <td>27</td>
+                                <td>-5</td>
+                                <td>35</td>
+                            </tr>
+                            <tr class="searchable" data-title="13. Crystal Palace 27 -8 33" data-category="Table"
+                                data-tags="premier league table crystal palace" data-href="#league-table">
+                                <td>13</td>
+                                <td>Crystal Palace</td>
+                                <td>27</td>
+                                <td>-8</td>
+                                <td>33</td>
+                            </tr>
+                            <tr class="searchable" data-title="14. Bournemouth 27 -10 32" data-category="Table"
+                                data-tags="premier league table bournemouth" data-href="#league-table">
+                                <td>14</td>
+                                <td>Bournemouth</td>
+                                <td>27</td>
+                                <td>-10</td>
+                                <td>32</td>
+                            </tr>
+                            <tr class="searchable" data-title="15. Brentford 27 -12 30" data-category="Table"
+                                data-tags="premier league table brentford" data-href="#league-table">
+                                <td>15</td>
+                                <td>Brentford</td>
+                                <td>27</td>
+                                <td>-12</td>
+                                <td>30</td>
+                            </tr>
+                            <tr class="searchable" data-title="16. Nott'm Forest 27 -15 28" data-category="Table"
+                                data-tags="premier league table nottingham forest" data-href="#league-table">
+                                <td>16</td>
+                                <td>Nott'm Forest</td>
+                                <td>27</td>
+                                <td>-15</td>
+                                <td>28</td>
+                            </tr>
+                            <tr class="searchable" data-title="17. Everton 27 -18 26" data-category="Table"
+                                data-tags="premier league table everton" data-href="#league-table">
+                                <td>17</td>
+                                <td>Everton</td>
+                                <td>27</td>
+                                <td>-18</td>
+                                <td>26</td>
+                            </tr>
+                            <tr class="searchable" data-title="18. Luton Town 27 -22 25" data-category="Table"
+                                data-tags="premier league table luton town" data-href="#league-table">
+                                <td>18</td>
+                                <td>Luton Town</td>
+                                <td>27</td>
+                                <td>-22</td>
+                                <td>25</td>
+                            </tr>
+                            <tr class="searchable" data-title="19. Burnley 27 -28 20" data-category="Table"
+                                data-tags="premier league table burnley" data-href="#league-table">
+                                <td>19</td>
+                                <td>Burnley</td>
+                                <td>27</td>
+                                <td>-28</td>
+                                <td>20</td>
+                            </tr>
+                            <tr class="searchable" data-title="20. Sheffield Utd 27 -35 16" data-category="Table"
+                                data-tags="premier league table sheffield united" data-href="#league-table">
+                                <td>20</td>
+                                <td>Sheffield Utd</td>
+                                <td>27</td>
+                                <td>-35</td>
+                                <td>16</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7) Player Profiles -->
+        <section id="players" class="section-pad bg-surface">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="title">Player profiles</h2>
+                    <p class="subtitle">Form, numbers, and narratives</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card profile-card hover-lift searchable" data-title="Victor Osimhen — Striker"
+                            data-category="Player" data-tags="osimhen striker napoli nigeria super eagles"
+                            data-href="#players">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center gap-3">
+                                    <img class="avatar" src="images/oshimen.webp" alt="Player" />
+                                    <div>
+                                        <h6 class="mb-0">Victor Osimhen</h6>
+                                        <small class="text-secondary">Striker • Napoli</small>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between mt-3 small">
+                                    <span>Goals: <strong>19</strong></span>
+                                    <span>xG: <strong>17.4</strong></span>
+                                    <span>Press: <strong>9.1</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card profile-card hover-lift searchable"
+                            data-title="Caroline Graham Hansen — Winger" data-category="Player"
+                            data-tags="graham hansen winger barcelona femeni" data-href="#players">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center gap-3">
+                                    <img class="avatar" src="images/C. G. Hansen.webp" alt="Player" />
+                                    <div>
+                                        <h6 class="mb-0">C. G. Hansen</h6>
+                                        <small class="text-secondary">Winger • Barcelona</small>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between mt-3 small">
+                                    <span>Assists: <strong>12</strong></span>
+                                    <span>xA: <strong>9.7</strong></span>
+                                    <span>KP: <strong>2.4</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card profile-card hover-lift searchable" data-title="Christiano Ronaldo — Winger"
+                            data-category="Player" data-tags="Christiano Ronaldo Al-nassr player" data-href="#players">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center gap-3">
+                                    <img class="avatar" src="images/ronaldo.webp" alt="Player" />
+                                    <div>
+                                        <h6 class="mb-0">Christiano Ronaldo</h6>
+                                        <small class="text-secondary">Winger • Al-Nassr</small>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between mt-3 small">
+                                    <span>Assists: <strong>9</strong></span>
+                                    <span>xA: <strong>9.7</strong></span>
+                                    <span>KP: <strong>2.4</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card profile-card hover-lift searchable" data-title="Lional Messi — Winger"
+                            data-category="Player" data-tags="Lional messi Inter-miami Winger" data-href="#players">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center gap-3">
+                                    <img class="avatar" src="images/messi.webp" alt="Player" />
+                                    <div>
+                                        <h6 class="mb-0">Lional Messi</h6>
+                                        <small class="text-secondary">Winger • Inter-Miami</small>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between mt-3 small">
+                                    <span>Assists: <strong>22</strong></span>
+                                    <span>xA: <strong>9.7</strong></span>
+                                    <span>KP: <strong>2.4</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card profile-card hover-lift searchable" data-title="Sadio Mane — Winger"
+                            data-category="Player" data-tags="Sadio Mane Al-Nassr " data-href="#players">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center gap-3">
+                                    <img class="avatar" src="images/mane.webp" alt="Player" />
+                                    <div>
+                                        <h6 class="mb-0">Sadio Mane</h6>
+                                        <small class="text-secondary">Winger • Al-nassr</small>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between mt-3 small">
+                                    <span>Assists: <strong>12</strong></span>
+                                    <span>xA: <strong>9.7</strong></span>
+                                    <span>KP: <strong>2.4</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <div class="card profile-card hover-lift searchable" data-title="Declan Rice — Midfielder"
+                            data-category="Player" data-tags="declan rice midfielder arsenal england"
+                            data-href="#players">
+                            <div class="card-body">
+                                <div class="d-flex align-items-center gap-3">
+                                    <img class="avatar" src="images/Declan Rice.webp" alt="Player" />
+                                    <div>
+                                        <h6 class="mb-0">Declan Rice</h6>
+                                        <small class="text-secondary">Midfielder • Arsenal</small>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between mt-3 small">
+                                    <span>Tackles: <strong>3.1</strong></span>
+                                    <span>Prog P: <strong>6.2</strong></span>
+                                    <span>Duels: <strong>58%</strong></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 8) Tactics & analytics -->
+        <section id="tactics-analytics" class="section-pad bg-gradient-soft">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="title">Tactics & analytics</h2>
+                    <p class="subtitle">Shapes, numbers, and the stories they tell</p>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Pass network -->
+                    <div class="col-lg-7">
+                        <div class="card h-100 chart-card">
+                            <div class="card-body">
+                                <h5 class="mb-3">Pass network snapshot</h5>
+                                <div class="chart-wrap" style="height: 380px;">
+                                    <canvas id="passNetworkChart" aria-label="Pass network chart" role="img"></canvas>
+                                </div>
+                                <p class="small text-secondary mt-3 mb-2">
+                                    Lines indicate pass volume; thicker lines = more passes. Node size reflects touches;
+                                    color shows influence.
+                                </p>
+                                <div class="d-flex flex-wrap gap-2 small">
+                                    <span class="badge rounded-pill"
+                                        style="background:rgba(25,195,125,.15); color:#7bffbd; border:1px solid rgba(25,195,125,.25)">High
+                                        influence</span>
+                                    <span class="badge rounded-pill"
+                                        style="background:rgba(10,165,122,.15); color:#9af5d2; border:1px solid rgba(10,165,122,.25)">Medium</span>
+                                    <span class="badge rounded-pill"
+                                        style="background:rgba(8,28,36,.35); color:#bcd7e6; border:1px solid rgba(143,179,201,.35)">Low</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Shot map -->
+                    <div class="col-lg-5">
+                        <div class="card h-100 chart-card">
+                            <div class="card-body">
+                                <h5 class="mb-3">Shot map snapshot</h5>
+                                <div class="chart-wrap" style="height: 440px;">
+                                    <canvas id="shotMapChart" aria-label="Shot map chart" role="img"></canvas>
+                                </div>
+                                <p class="small text-secondary mt-3 mb-2">
+                                    Circle size scales with xG; green = goal, amber = saved/blocked, red = off target.
+                                </p>
+                                <div class="d-flex flex-wrap gap-2 small">
+                                    <span class="badge rounded-pill"
+                                        style="background:rgba(25,195,125,.2); color:#72f3b7; border:1px solid rgba(25,195,125,.35)">Goal</span>
+                                    <span class="badge rounded-pill"
+                                        style="background:rgba(255,193,7,.18); color:#ffd77a; border:1px solid rgba(255,193,7,.35)">Saved/Blocked</span>
+                                    <span class="badge rounded-pill"
+                                        style="background:rgba(220,53,69,.18); color:#ff9aa6; border:1px solid rgba(220,53,69,.35)">Off
+                                        target</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+<!-- Compare Players -->
+        <section class="player-compare" id="compareModule">
+  <header class="compare-header">
+    <h2>Compare players</h2>
+    <p>Select up to 12 players to compare goals, assists, pressing, and heatmaps</p>
+  </header>
+
+  <div class="compare-controls">
+    <div id="playerSlots" class="slots"></div>
+    <div class="control-row">
+      <button id="addBtn" class="btn" type="button">+ Add player</button>
+      <button id="clearBtn" class="btn btn-ghost" type="button">Clear</button>
+      <button id="shareBtn" class="btn btn-outline" type="button">Copy share link</button>
+    </div>
+  </div>
+
+  <div class="comparison-results hidden" id="resultsWrap">
+    <div class="charts-wrap">
+      <div class="chart-card">
+        <h4>Goals</h4>
+        <canvas id="goalsChart"></canvas>
+      </div>
+      <div class="chart-card">
+        <h4>Assists</h4>
+        <canvas id="assistsChart"></canvas>
+      </div>
+      <div class="chart-card">
+        <h4>Pressing (per 90)</h4>
+        <canvas id="pressChart"></canvas>
+      </div>
+    </div>
+
+    <div class="heatmap-wrap">
+      <h4>Heatmaps</h4>
+      <div id="heatmapRow" class="heatmap-row"></div>
+    </div>
+  </div>
+</section>
+
+
+
+        <!-- 9) Podcasts -->
+        <section id="podcasts" class="section-pad bg-surface">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="title">Podcasts</h2>
+                    <p class="subtitle">Listen on the go</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card hover-lift searchable" data-title="Midfield Masters — Episode 42"
+                            data-category="Podcast" data-tags="podcast midfield tactics episode" data-href="#podcasts">
+                            <div class="card-body">
+                                <h6 class="mb-2"><i class="bi bi-mic-fill me-2"></i>Midfield Masters — Ep. 42</h6>
+                                <audio controls class="w-100">
+                                    <source src="images/Hanujay-Wassup-Champions-League-(TrendyBeatz.com).mp3" type="audio/mpeg">
+                                </audio>
+                                <p class="small text-secondary mt-2 mb-0">Triangles, third-man runs, and
+                                    overload-to-isolate patterns.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card hover-lift searchable" data-title="Data Dive — Expected Goals vs Reality"
+                            data-category="Podcast" data-tags="analytics xg finishing variance" data-href="#podcasts">
+                            <div class="card-body">
+                                <h6 class="mb-2"><i class="bi bi-graph-up-arrow me-2"></i>Data Dive — Expected Goals vs
+                                    Reality</h6>
+                                <audio controls class="w-100">
+                                    <source src="" type="audio/mpeg">
+                                </audio>
+                                <p class="small text-secondary mt-2 mb-0">Finishing streak or sustainable edge? We
+                                    crunch the numbers.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Matchday Guide -->
+        <section id="matchday-guide" class="section-pad">
+            <div class="container">
+                <div class="section-heading mb-4">
+                    <h2 class="title">Matchday guide</h2>
+                    <p class="subtitle">Fixtures by club, stadium essentials, and head‑to‑head history</p>
+                </div>
+
+                <div class="row g-4">
+                    <!-- Fixtures by Club -->
+                    <div class="col-lg-6">
+                        <div class="mg-card h-100">
+                            <div class="mg-card-header">
+                                <h3 class="h5 m-0 text-dark">Fixtures by club</h3>
+                                <small class="text-muted">Tap a logo to see schedule and form</small>
+                            </div>
+
+                            <div class="mg-card-body">
+                                <!-- Club grid -->
+                                <div class="club-grid" id="clubGrid">
+                                    <!-- Use real logos if you have them; initials are placeholders -->
+                                    <button class="club-logo" data-club="Arsenal" data-next="vs Chelsea — Sat 17:30"
+                                        data-form="W W D W W" aria-label="Arsenal">
+                                        <img src="images/arsenal-logo.png" alt="Arsenal logo">
+                                    </button>
+
+                                    <button class="club-logo" data-club="Man City" data-next="@ Liverpool — Sun 16:30"
+                                        data-form="W W W D W" aria-label="Manchester City">
+                                        <img src="images/man-city logo.png" alt="Manchester City logo">
+                                    </button>
+
+                                    <button class="club-logo" data-club="Liverpool" data-next="vs Man City — Sun 16:30"
+                                        data-form="W D W W D" aria-label="Liverpool">
+                                        <img src="images/liverpool logo.png" alt="Liverpool logo">
+                                    </button>
+
+                                    <button class="club-logo" data-club="Chelsea" data-next="@ Arsenal — Sat 17:30"
+                                        data-form="D W L W D" aria-label="Chelsea">
+                                        <img src="images/chelsea logo.png" alt="Chelsea logo">
+                                    </button>
+
+                                    <button class="club-logo" data-club="Man Utd" data-next="@ Newcastle — Mon 20:00"
+                                        data-form="W L W W D" aria-label="Manchester United">
+                                        <img src="images/man-u logo.png" alt="Manchester United logo">
+                                    </button>
+
+                                    <button class="club-logo" data-club="Tottenham" data-next="vs Brighton — Sat 15:00"
+                                        data-form="W D W L W" aria-label="Tottenham">
+                                        <img src="images/tottenham-logo.png" alt="Tottenham Hotspur logo">
+                                    </button>
+
+                                    <button class="club-logo" data-club="Barcelona" data-next="@ Sevilla — Sun 20:00"
+                                        data-form="W W W W D" aria-label="Barcelona">
+                                        <img src="images/barcelona-logo.png" alt="Barcelona logo">
+                                    </button>
+
+                                    <button class="club-logo" data-club="Real Madrid" data-next="vs Girona — Sat 20:00"
+                                        data-form="W W D W W" aria-label="Real Madrid">
+                                        <img src="images/real-madrid-logo.webp" alt="Real Madrid logo">
+                                    </button>
+
+                                </div>
+
+                                <!-- Club panel -->
+                                <div class="club-panel mt-4" id="clubPanel" aria-live="polite">
+                                    <div class="club-panel-top">
+                                        <div class="club-badge" id="clubBadge">—</div>
+                                        <div>
+                                            <div class="club-name h6 m-0 text-dark" id="clubName">Select a club</div>
+                                            <small class="text-muted">Next fixture</small>
+                                        </div>
+                                    </div>
+                                    <div class="club-meta mt-3 text-dark">
+                                        <div><span class="meta-label">Fixture:</span> <span id="clubNext">—</span></div>
+                                        <div><span class="meta-label">Form:</span> <span id="clubForm">—</span></div>
+                                    </div>
+                                    <div class="mt-3">
+                                        <a href="#" class="btn btn-sm btn-outline-success " id="clubAllFixtures"
+                                            aria-disabled="true">Open full schedule</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stadium Info -->
+                    <div class="col-lg-6">
+                        <div class="mg-card h-100">
+                            <div class="mg-card-header">
+                                <h3 class="h5 m-0 text-dark">Stadium info</h3>
+                                <small class="text-muted">Travel tips, seating, and chants</small>
+                            </div>
+
+                            <div class="mg-card-body">
+                                <label for="stadiumSelect" class="form-label small text-muted">Choose a stadium</label>
+                                <select id="stadiumSelect" class="form-select">
+                                    <option selected disabled>Pick a stadium…</option>
+                                    <option value="Emirates"
+                                        data-travel="Arsenal (London) — Arsenal/Highbury & Islington (Tube). Arrive early for security."
+                                        data-seating="Best view: Block 112–115 lower, central. Family area: Clock End."
+                                        data-chants="’We love you Arsenal’ • ’North London forever’">Emirates Stadium
+                                    </option>
+                                    <option value="Etihad"
+                                        data-travel="Man City (Manchester) — Velopark tram. Matchday traffic heavy; consider park & ride."
+                                        data-seating="South Stand for home atmosphere. Longside tiers for tactics view."
+                                        data-chants="’Blue Moon’ • ’City till I die’">Etihad Stadium</option>
+                                    <option value="Anfield"
+                                        data-travel="Liverpool — Sandhills shuttle bus. Arrive 60–90 mins early."
+                                        data-seating="Kop Stand for atmosphere. Main Stand upper for analysis view."
+                                        data-chants="’You’ll Never Walk Alone’ • ’Allez, Allez, Allez’">Anfield</option>
+                                    <option value="OldTrafford"
+                                        data-travel="Man United (Manchester) — Old Trafford tram. Queues after FT; linger 15–20 mins."
+                                        data-seating="Stretford End for noise. Sir Alex Ferguson Stand for overview."
+                                        data-chants="’Glory, Glory Man United’ • ’U-N-I-T-E-D’">Old Trafford</option>
+                                    <option value="StamfordBridge"
+                                        data-travel="Chelsea (London) — Fulham Broadway (Tube). Tight turnstiles; travel light."
+                                        data-seating="Matthew Harding Stand for chants. West Stand for comfort."
+                                        data-chants="’Carefree’ • ’Blue is the colour’">Stamford Bridge</option>
+                                    <option value="TottenhamHotspur"
+                                        data-travel="Spurs (London) — White Hart Lane (Overground). Many food stalls on High Rd."
+                                        data-seating="South Stand (single tier) for wall of sound. Corners for value."
+                                        data-chants="’Oh when the Spurs’ • ’Come on you Spurs’">Tottenham Hotspur
+                                        Stadium</option>
+                                </select>
+
+                                <dl class="stadium-info mt-3 text-dark" id="stadiumInfo">
+                                    <dt>Travel</dt>
+                                    <dd>—</dd>
+                                    <dt>Seating</dt>
+                                    <dd>—</dd>
+                                    <dt>Chants</dt>
+                                    <dd>—</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Head-to-Head History -->
+                    <div class="col-12">
+                        <div class="mg-card">
+                            <div class="mg-card-header">
+                                <h3 class="h5 m-0  text-dark">Head‑to‑head history</h3>
+                                <small class="text-muted">Pick two clubs to compare meetings</small>
+                            </div>
+
+                            <div class="mg-card-body">
+                                <div class="row g-3 align-items-end">
+                                    <div class="col-sm-4">
+                                        <label class="form-label small text-muted" for="teamA">Team A</label>
+                                        <select id="teamA" class="form-select">
+                                            <option>Arsenal</option>
+                                            <option>Chelsea</option>
+                                            <option>Liverpool</option>
+                                            <option>Man City</option>
+                                            <option>Man Utd</option>
+                                            <option>Tottenham</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <label class="form-label small text-muted" for="teamB">Team B</label>
+                                        <select id="teamB" class="form-select">
+                                            <option>Chelsea</option>
+                                            <option>Arsenal</option>
+                                            <option>Liverpool</option>
+                                            <option>Man City</option>
+                                            <option>Man Utd</option>
+                                            <option>Tottenham</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-sm-4">
+                                        <button id="compareBtn" class="btn btn-primary w-100">Compare</button>
+                                    </div>
+                                </div>
+
+                                <div class="h2h-result mt-4" id="h2hResult" aria-live="polite">
+                                    <div class="h2h-badges">
+                                        <span class="badge bg-success-subtle text-success">W: <span
+                                                id="resW">—</span></span>
+                                        <span class="badge bg-warning-subtle text-warning">D: <span
+                                                id="resD">—</span></span>
+                                        <span class="badge bg-danger-subtle text-danger">L: <span
+                                                id="resL">—</span></span>
+                                    </div>
+                                    <div class="mt-2 small text-muted">Last 5: <span id="resLast5">—</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- /row -->
+            </div>
+        </section>
+
+        <!-- Competitions & Leagues Directory -->
+        <section id="competitions-hub" class="section-pad bg-gradient-soft">
+            <div class="container">
+                <div class="section-heading mb-4">
+                    <h2 class="title">Competitions hub</h2>
+                    <p class="subtitle">Search across domestic leagues and UEFA tournaments</p>
+                </div>
+
+                <!-- Search and filters -->
+                <div class="comp-controls">
+                    <div class="searchbar">
+                        <input id="leagueSearch" class="form-control" type="search"
+                            placeholder="Search leagues (e.g., Premier League, Europa League, CAF Champions League)…"
+                            aria-label="Search leagues">
+                    </div>
+                    <div class="filter-pills" id="leagueFilters" role="tablist" aria-label="League filters">
+                        <button class="pill active" data-filter="all">All</button>
+                        <button class="pill" data-filter="europe">Europe</button>
+                        <button class="pill" data-filter="england">England</button>
+                        <button class="pill" data-filter="africa">Africa</button>
+                        <button class="pill" data-filter="americas">Americas</button>
+                        <button class="pill" data-filter="asia">Asia</button>
+                    </div>
+                </div>
+
+                <!-- Leagues grid -->
+                <div class="league-grid" id="leagueGrid">
+                    <article class="league-card" data-tags="england europe premier league epl ucl country-england">
+                        <header>
+                            <h3 class="league-name">Premier League</h3>
+                            <span class="region-badge">England</span>
+                        </header>
+                        <p class="small text-muted m-0">Season 2024/25 • 20 clubs • Title, Europe, relegation</p>
+                        <a href="#" class="stretched-link" aria-label="Open Premier League hub"></a>
+                    </article>
+
+                    <article class="league-card" data-tags="europe uefa champions league ucl">
+                        <header>
+                            <h3 class="league-name">UEFA Champions League</h3>
+                            <span class="region-badge">Europe</span>
+                        </header>
+                        <p class="small text-muted m-0">Elite clubs • Group to knockouts • Final in May</p>
+                        <a href="#" class="stretched-link" aria-label="Open Champions League hub"></a>
+                    </article>
+
+                    <article class="league-card" data-tags="europe uefa europa league uel">
+                        <header>
+                            <h3 class="league-name">UEFA Europa League</h3>
+                            <span class="region-badge">Europe</span>
+                        </header>
+                        <p class="small text-muted m-0">Thursday nights • Group to knockouts • Champions qualify for UCL
+                        </p>
+                        <a href="#" class="stretched-link" aria-label="Open Europa League hub"></a>
+                    </article>
+
+                    <article class="league-card" data-tags="europe uefa europa conference league uecl">
+                        <header>
+                            <h3 class="league-name">UEFA Europa Conference League</h3>
+                            <span class="region-badge">Europe</span>
+                        </header>
+                        <p class="small text-muted m-0">Developing clubs • Continental experience • Pathway to UEL</p>
+                        <a href="#" class="stretched-link" aria-label="Open Europa Conference League hub"></a>
+                    </article>
+
+                    <article class="league-card" data-tags="spain europe la liga laliga">
+                        <header>
+                            <h3 class="league-name">La Liga</h3>
+                            <span class="region-badge">Spain</span>
+                        </header>
+                        <p class="small text-muted m-0">20 clubs • Clásico drama • Tactical masterclasses</p>
+                        <a href="#" class="stretched-link" aria-label="Open La Liga hub"></a>
+                    </article>
+
+                    <article class="league-card" data-tags="italy europe serie a">
+                        <header>
+                            <h3 class="league-name">Serie A</h3>
+                            <span class="region-badge">Italy</span>
+                        </header>
+                        <p class="small text-muted m-0">Calcio heritage • Defensive craft • Title race intrigue</p>
+                        <a href="#" class="stretched-link" aria-label="Open Serie A hub"></a>
+                    </article>
+
+                    <article class="league-card" data-tags="germany europe bundesliga">
+                        <header>
+                            <h3 class="league-name">Bundesliga</h3>
+                            <span class="region-badge">Germany</span>
+                        </header>
+                        <p class="small text-muted m-0">High press • Big crowds • Goals galore</p>
+                        <a href="#" class="stretched-link" aria-label="Open Bundesliga hub"></a>
+                    </article>
+
+                    <article class="league-card" data-tags="france europe ligue 1">
+                        <header>
+                            <h3 class="league-name">Ligue 1</h3>
+                            <span class="region-badge">France</span>
+                        </header>
+                        <p class="small text-muted m-0">Youth pipelines • Technical flair • Rising contenders</p>
+                        <a href="#" class="stretched-link" aria-label="Open Ligue 1 hub"></a>
+                    </article>
+
+                    <article class="league-card" data-tags="africa caf champions league cafcl">
+                        <header>
+                            <h3 class="league-name">CAF Champions League</h3>
+                            <span class="region-badge">Africa</span>
+                        </header>
+                        <p class="small text-muted m-0">Best of Africa • Group to knockouts • Continental crown</p>
+                        <a href="#" class="stretched-link" aria-label="Open CAF Champions League hub"></a>
+                    </article>
+
+                    <article class="league-card" data-tags="nigeria africa npfl">
+                        <header>
+                            <h3 class="league-name">Nigeria Professional Football League</h3>
+                            <span class="region-badge">Nigeria</span>
+                        </header>
+                        <p class="small text-muted m-0">Home end roars • Rising talents • City pride</p>
+                        <a href="#" class="stretched-link" aria-label="Open NPFL hub"></a>
+                    </article>
+
+                    <article class="league-card" data-tags="americas usa mls major league soccer">
+                        <header>
+                            <h3 class="league-name">Major League Soccer</h3>
+                            <span class="region-badge">USA/Canada</span>
+                        </header>
+                        <p class="small text-muted m-0">Conference battles • Playoffs • Expanding footprint</p>
+                        <a href="#" class="stretched-link" aria-label="Open MLS hub"></a>
+                    </article>
+
+                    <article class="league-card" data-tags="asia afc champions league afccl">
+                        <header>
+                            <h3 class="league-name">AFC Champions League</h3>
+                            <span class="region-badge">Asia</span>
+                        </header>
+                        <p class="small text-muted m-0">Top Asian clubs • East & West paths • Grand final</p>
+                        <a href="#" class="stretched-link" aria-label="Open AFC Champions League hub"></a>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- 10) Photo Gallery -->
+        <section id="gallery" class="section-pad bg-gradient-soft">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="title">Photo gallery</h2>
+                    <p class="subtitle">Frozen frames of flying boots</p>
+                </div>
+
+                <div class="gallery-grid">
+                    <img class="rounded-3 searchable" src="images/gallery1.png" alt="Goal celebration"
+                        data-title="Goal celebration" data-category="Gallery" data-tags="celebration goal fans"
+                        data-href="#gallery" />
+                    <img class="rounded-3 searchable" src="images/gallery2.png" alt="Tackle"
+                        data-title="Crunching tackle" data-category="Gallery" data-tags="defense tackle"
+                        data-href="#gallery" />
+                    <img class="rounded-3 searchable" src="images/gallery3.png" alt="Stadium"
+                        data-title="Stadium lights" data-category="Gallery" data-tags="stadium night lights"
+                        data-href="#gallery" />
+                    <img class="rounded-3 searchable" src="images/gallery4.png" alt="Fans" data-title="Home end roars"
+                        data-category="Gallery" data-tags="fans atmosphere" data-href="#gallery" />
+
+                          <img class="rounded-3 searchable" src="images/gallery5.png" alt="Stadium"
+                        data-title="Press interview" data-category="Gallery" data-tags="press interview"
+                        data-href="#gallery" />
+
+                      <img class="rounded-3 searchable" src="images/gallery6.png" alt="Fans" data-title="Home end roars"
+                        data-category="Gallery" data-tags="fans atmosphere" data-href="#gallery" />
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 11) Newsletter -->
+        <section id="newsletter" class="section-pad bg-surface">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="title">Newsletter</h2>
+                    <p class="subtitle">Smart football in your inbox, twice a week</p>
+                </div>
+
+                <form class="row g-3">
+                    <div class="col-md-8">
+                        <label for="newsletterEmail" class="form-label small text-secondary">Email address</label>
+                        <input type="email" class="form-control form-control-lg" id="newsletterEmail"
+                            placeholder="you@example.com" />
+                    </div>
+                    <div class="col-md-4 d-flex align-items-end">
+                  <button type="submit" class="btn btn-cta btn-lg w-100">Subscribe</button>
+                    </div>
+                    <div class="col-12">
+                        <small class="text-secondary">No spam. Unsubscribe anytime.</small>
+                    </div>
+                </form>
+
+            </div>
+        </section>
+
+        <!-- 12) About & Contact -->
+        <section id="about-contact" class="section-pad bg-gradient-soft">
+            <div class="container">
+                <div class="section-heading">
+                    <h2 class="title">About & contact</h2>
+                    <p class="subtitle">Based in Lagos — writing for the world</p>
+                </div>
+
+                <div class="row g-4">
+                    <div class="col-lg-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5>About Football Pulse</h5>
+                                <p class="text-secondary">
+                                    We blend editorial craft with data-savvy thinking to bring you football that sticks
+                                    — from NPFL to UCL.
+                                </p>
+                                <ul class="list-unstyled small mb-0">
+                                    <li class="mb-2"><i class="bi bi-check2-circle me-2 text-success"></i>Independent,
+                                        fan-first coverage</li>
+                                    <li class="mb-2"><i class="bi bi-check2-circle me-2 text-success"></i>Tactics
+                                        explained simply and clearly</li>
+                                    <li><i class="bi bi-check2-circle me-2 text-success"></i>Data visuals and scouting
+                                        notes</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h5>Contact</h5>
+                                <form id="contactForm" class="row g-3">
+                                    <div class="col-md-6">
+                                        <label class="form-label small text-secondary">Name</label>
+                                        <input type="text" class="form-control" placeholder="Your name" />
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label small text-secondary">Email</label>
+                                        <input type="email" class="form-control" placeholder="you@example.com" />
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label small text-secondary">Message</label>
+                                        <textarea class="form-control" rows="4"
+                                            placeholder="How can we help?"></textarea>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="button" class="btn btn-outline-cta">Send message</button>
+                                    </div>
+                                </form>
+                                <div class="mt-3 small text-secondary">
+                                    <i class="bi bi-geo-alt me-2"></i>Lagos, Nigeria
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 13) Download Our App -->
+        <section id="download-app" class="section-pad bg-surface">
+            <div class="container">
+                <div class="section-heading text-center mb-5">
+                    <h2 class="title">Get the Football Pulse App</h2>
+                    <p class="subtitle">Live scores, breaking news, and deep analysis — wherever you go</p>
+                </div>
+                <div class="row align-items-center g-5">
+                    <!-- App preview image -->
+                    <div class="col-lg-6 text-center">
+                        <img src="images/logo9.PNG" class="img-fluid rounded-5 shadow-lg pb-2"
+                            alt="Football Pulse App preview on phone" style="height: 450px;" />
+                            <img src="images/Copilot_20250813_201257.PNG" class="img-fluid rounded-5 shadow-lg" 
+                            alt="Football Pulse App preview on phone" style="height: 450px;" />
+                    </div>
+                    <!-- Text + buttons -->
+                    <div class="col-lg-6">
+                        <h3 class="fw-bold mb-3">Stay connected, always</h3>
+                        <p class="mb-4 text-secondary">
+                            Download the Football Pulse app to get real‑time match updates,
+                            tactical breakdowns, and breaking headlines right in your pocket.
+                        </p>
+                        <div class="d-flex flex-wrap gap-4">
+                            <a href="#" class="store-btn">
+                                <img src="images/google badge.png" alt="Get it on Google Play" height="60"
+                                    width="100" />
+                            </a>
+                            <a href="#" class="store-btn">
+                                <img src="images/apple badge.png" class="rounded-pill" alt="Download on the App Store"
+                                    height="60" width="100" />
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gradient-brand text-white py-5 mt-5 position-relative">
+        <div class="container-fluid px-4">
+            <div class="row align-items-center g-4">
+
+                <!-- Left: write-up + copyright -->
+                <div class="col-lg-5 small">
+                    Football Pulse blends bold storytelling with sharp tactics and data — made in Lagos, read
+                    worldwide.<br>
+                    © <span id="year"></span> Football Pulse. All rights reserved.
+                </div>
+
+                <!-- Middle: quick links -->
+                <div class="col-lg-4">
+                    <nav class="d-flex flex-wrap gap-3 small">
+                        <a href="#latest-news" class="link-light text-decoration-none">Latest</a>
+                        <a href="#tactics-analytics" class="link-light text-decoration-none">Tactics</a>
+                        <a href="#about-contact" class="link-light text-decoration-none">Contact</a>
+                        <a href="/privacy" class="link-light text-decoration-none opacity-75">Privacy</a>
+                        <a href="/terms" class="link-light text-decoration-none opacity-75">Terms</a>
+                    </nav>
+                </div>
+
+                <!-- Right: socials -->
+                <div class="col-lg-3">
+                    <div class="d-flex gap-3 justify-content-lg-end">
+                        <a class="social-link" href="#" aria-label="X (Twitter)"><i class="bi bi-twitter-x"></i></a>
+                        <a class="social-link" href="#" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                        <a class="social-link" href="#" aria-label="YouTube"><i class="bi bi-youtube"></i></a>
+                        <a class="social-link" href="#" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                        <a class="social-link" href="#" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Back to top button -->
+        <button id="backToTop" class="back-to-top" aria-label="Back to top">
+            <i class="bi bi-arrow-up"></i>
+        </button>
+    </footer>
+
+    <script>
+        // Back-to-top show/hide + scroll
+        const backBtn = document.getElementById('backToTop');
+        const toggleBackBtn = () => {
+            if (window.scrollY > 200) backBtn.classList.add('show');
+            else backBtn.classList.remove('show');
+        };
+        window.addEventListener('scroll', toggleBackBtn);
+        backBtn.addEventListener('click', () => {
+            window.scrollTo({ top: 20, behavior: 'smooth' });
+        });
+        toggleBackBtn();
+    </script>
+
+    <script>
+        // Fixtures by Club interactions
+        const clubGrid = document.getElementById('clubGrid');
+        const clubName = document.getElementById('clubName');
+        const clubNext = document.getElementById('clubNext');
+        const clubForm = document.getElementById('clubForm');
+        const clubBadge = document.getElementById('clubBadge');
+        const clubAllFixtures = document.getElementById('clubAllFixtures');
+
+        if (clubGrid) {
+            clubGrid.addEventListener('click', (e) => {
+                const btn = e.target.closest('.club-logo');
+                if (!btn) return;
+
+                // visual active state
+                clubGrid.querySelectorAll('.club-logo').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+
+                // populate panel
+                const name = btn.dataset.club;
+                const next = btn.dataset.next;
+                const form = btn.dataset.form;
+
+                clubName.textContent = name;
+                clubNext.textContent = next;
+                clubForm.textContent = form;
+                clubBadge.textContent = (name || '—').split(' ').map(w => w[0]).join('').slice(0, 3).toUpperCase();
+
+                // enable "full schedule" link (swap href to your real route)
+                clubAllFixtures.classList.remove('disabled');
+                clubAllFixtures.removeAttribute('aria-disabled');
+                clubAllFixtures.href = `#/clubs/${encodeURIComponent(name)}/fixtures`;
+            });
+        }
+
+        // Stadium Info
+        const stadiumSelect = document.getElementById('stadiumSelect');
+        const stadiumInfo = document.getElementById('stadiumInfo');
+        if (stadiumSelect && stadiumInfo) {
+            stadiumSelect.addEventListener('change', (e) => {
+                const opt = stadiumSelect.selectedOptions[0];
+                const entries = stadiumInfo.querySelectorAll('dd');
+                entries[0].textContent = opt.dataset.travel || '—';
+                entries[1].textContent = opt.dataset.seating || '—';
+                entries[2].textContent = opt.dataset.chants || '—';
+            });
+        }
+
+        // Head-to-Head
+        const h2hData = {
+            'Arsenal|Chelsea': { W: 81, D: 59, L: 69, last5: 'W D W L W' },
+            'Arsenal|Tottenham': { W: 84, D: 59, L: 66, last5: 'D W W L W' },
+            'Liverpool|Man Utd': { W: 71, D: 58, L: 82, last5: 'W W D W W' },
+            'Man City|Man Utd': { W: 60, D: 53, L: 78, last5: 'L W W L W' },
+        };
+        const teamA = document.getElementById('teamA');
+        const teamB = document.getElementById('teamB');
+        const compareBtn = document.getElementById('compareBtn');
+        const resW = document.getElementById('resW');
+        const resD = document.getElementById('resD');
+        const resL = document.getElementById('resL');
+        const resLast5 = document.getElementById('resLast5');
+
+        if (compareBtn) {
+            compareBtn.addEventListener('click', () => {
+                const a = teamA.value, b = teamB.value;
+                if (a === b) {
+                    resW.textContent = '—'; resD.textContent = '—'; resL.textContent = '—'; resLast5.textContent = 'Pick two different clubs';
+                    return;
+                }
+                const key = `${a}|${b}`;
+                const flipKey = `${b}|${a}`;
+                let record = h2hData[key];
+                let flipped = false;
+                if (!record && h2hData[flipKey]) {
+                    // Flip perspective: swap W and L
+                    const r = h2hData[flipKey];
+                    record = { W: r.L, D: r.D, L: r.W, last5: r.last5 };
+                    flipped = true;
+                }
+                if (!record) {
+                    resW.textContent = '—'; resD.textContent = '—'; resL.textContent = '—'; resLast5.textContent = 'No data yet';
+                    return;
+                }
+                resW.textContent = record.W;
+                resD.textContent = record.D;
+                resL.textContent = record.L;
+                resLast5.textContent = record.last5 + (flipped ? ' (A perspective)' : '');
+            });
+        }
+
+        // Competitions search/filter
+        const leagueSearch = document.getElementById('leagueSearch');
+        const leagueGrid = document.getElementById('leagueGrid');
+        const leagueFilters = document.getElementById('leagueFilters');
+
+        function normalize(str) { return (str || '').toLowerCase().trim(); }
+
+        function applyLeagueFilter() {
+            const query = normalize(leagueSearch.value);
+            const activePill = leagueFilters.querySelector('.pill.active');
+            const scope = activePill ? activePill.dataset.filter : 'all';
+
+            const cards = leagueGrid.querySelectorAll('.league-card');
+            cards.forEach(card => {
+                const name = normalize(card.querySelector('.league-name').textContent);
+                const tags = normalize(card.dataset.tags);
+                const matchesQuery = !query || name.includes(query) || tags.includes(query);
+                const matchesScope =
+                    scope === 'all' ||
+                    tags.includes(scope);
+                card.style.display = (matchesQuery && matchesScope) ? '' : 'none';
+            });
+        }
+
+        if (leagueSearch) leagueSearch.addEventListener('input', applyLeagueFilter);
+        if (leagueFilters) {
+            leagueFilters.addEventListener('click', (e) => {
+                const pill = e.target.closest('.pill');
+                if (!pill) return;
+                leagueFilters.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+                pill.classList.add('active');
+                applyLeagueFilter();
+            });
+        }
+        applyLeagueFilter();
+    </script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function(){
+  setTimeout(function(){
+    document.getElementById('preloader').classList.add('hidden');
+  }, 5000);
+});
+</script>
+
+
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.3/dist/chart.umd.min.js"></script>
+
+
+    <!--  JS -->
+    <script src="app.js"></script>
+    <script src="script.js"></script>
+    <script src="compare.js"></script>
+</body>
+
+</html>
